@@ -74,14 +74,20 @@ Data & EDA → Cointegration Screening → HMM Regime Detection → GAT Pair Sco
 ## 📁 Repository Structure
 
 ```
-pairs-trading/
-├── 1_Data_Ingestion_&_EDA.ipynb               # Data loading, EDA, correlation & cointegration analysis
+PairsTrading/
+├── 1_Data_Ingestion_&_EDA.ipynb                    # Data loading, EDA, correlation & cointegration analysis
 ├── 2_Hidden_Markov_Model_(Regime_Detection).ipynb  # HMM regime detection
-├── 3_DRL_(PPO).ipynb                          # PPO agent training & backtesting
-└── 4_GNN.ipynb                                # Graph Attention Network pair scoring
+├── 3_DRL_(PPO).ipynb                               # PPO agent training & backtesting
+├── 4_GNN.ipynb                                     # Graph Attention Network pair scoring
+└── Results/
+    ├── cointegration_pvalues.csv                   # Johansen test p-values for all 741 pairs
+    ├── correlation_matrix.csv                      # Pairwise correlation matrix for 39 assets
+    ├── strong_pairs.csv                            # 36 cointegrated pairs (p < 0.05)
+    ├── hmm_regimes.csv                             # Daily HMM regime labels
+    ├── gnn_all_pairs_scores.csv                    # GAT similarity scores for all pairs
+    ├── all_pairs_results.csv                       # PPO trading results across all 36 pairs
+    └── gnn_precision_metrics.csv                   # GNN validation and precision-at-K metrics
 ```
-
----
 
 ## 🚀 How to Run
 
