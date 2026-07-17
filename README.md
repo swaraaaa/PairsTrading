@@ -94,15 +94,15 @@ PairsTrading/
 1. Clone the repo
 2. Install dependencies:
 ```bash
-pip install numpy pandas matplotlib seaborn scikit-learn torch torch-geometric stable-baselines3 gymnasium hmmlearn
+pip install numpy pandas matplotlib seaborn scikit-learn torch torch-geometric stable-baselines3 gymnasium hmmlearn yfinance
 ```
 3. Run notebooks in order:
-   - `1_Data_Ingestion_&_EDA.ipynb` — universe construction and pair screening
+   - `1_Data_Ingestion_&_EDA.ipynb` — fetches stock data via `yfinance`, runs EDA and cointegration screening
    - `2_Hidden_Markov_Model_(Regime_Detection).ipynb` — fit HMM and label regimes
    - `4_GNN.ipynb` — train GAT and score pairs
    - `3_DRL_(PPO).ipynb` — train PPO agents and evaluate
 
----
+> **Note:** Stock data is pulled automatically via `yfinance` inside the first notebook. No manual data download required. Pre-computed results are available in the `Results/` folder.
 
 ## 👤 Authors
 
