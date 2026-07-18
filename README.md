@@ -2,7 +2,7 @@
 
 **Statistical Arbitrage · Graph Attention Network · Hidden Markov Model · PPO Reinforcement Learning · Python**
 
-> FE-670 Final Project — MS Financial Engineering, Stevens Institute of Technology (Dec 2025)
+> FE-670 Final Project — MS Financial Engineering, Stevens Institute of Technology 
 
 > Authors: Swara Dave · Parth Vora · Robin Singh
 
